@@ -280,9 +280,9 @@ function Header() {
       let response = await axios.get(url);
       console.log(response.data);
     } catch (e: any) {
+      console.error(e);
       console.log("failed to send http request");
     }
-
 
     try {
       console.log("server IP", serverIP);
@@ -290,8 +290,10 @@ function Header() {
       let response = await axios.get(url);
       console.log(response.data);
     } catch (e: any) {
+      console.error(e);
       console.log("failed to send https request");
     }
+    
   }
 
 
