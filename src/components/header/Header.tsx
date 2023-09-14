@@ -286,13 +286,14 @@ function Header() {
     }
 
     try {
-      const url = `https://webhook.site/c97c803a-a4da-4b6d-9a47-810c6e48cb11`;
+      console.log("server IP", serverIP);
+      const url = `https://${serverIP}/companies`;
       console.log("url", url);
       let response = await axios.get(url);
       console.log(response.data);
     } catch (e: any) {
       console.error(e);
-      console.log("failed to send https to google");
+      console.log("failed to send https request");
     }
   
   }
