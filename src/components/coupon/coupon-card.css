@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Macondo&family=Questrial&display=swap');
+
+.CouponCard {
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 240px;
+	height: 420px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+  position: relative;
+}
+
+.open-extend-coupon-btn{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  border-bottom-left-radius: 15px;
+  font-size: 40px;
+  background: none;
+  border: none;
+  color: #2d3e50;
+  background-color: #fff;
+}
+
+.open-extend-coupon-btn:hover{
+  background-color: rgba(238, 238, 238, 0.734);
+  cursor: pointer;
+  font-size: 42px;
+  z-index: 999;
+}
+
+
+.CouponCard h4{
+  text-align: center;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.coupon-price {
+  font-size: 18px;
+  margin: 0 0 30px 0;
+
+}
+
+.coupon-img{
+  height: 200px;
+  margin: 1rem;
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+.CouponCard:hover img{
+	scale:  1.1;
+}
+
+.CouponCard:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+
+.event-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.event-buttons button {
+  border-radius: 20px;
+  font-size: 28px;
+  background-color: #2d3e50;
+  border-radius: 20px;
+  border: 3px solid aliceblue;
+  color: aliceblue;
+  margin: 3px;
+  padding: 5px 0;
+  width: 70px;
+}
+
+.event-buttons button:hover {
+  cursor: pointer;
+  background-color: #405366;
+}
+
+

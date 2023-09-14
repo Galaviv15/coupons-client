@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Macondo&family=Questrial&family=Tsukimi+Rounded&display=swap');
+
+.SearchCouponsModal *{
+    padding: 0;
+    margin: 0;
+}
+
+.SearchCouponsModal .exit-modal-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 15px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: #2d3e50;
+    background-color: #fff;
+  }
+
+.SearchCouponsModal .exit-modal-icon:hover{
+    background-color: rgba(238, 238, 238, 0.734);
+    cursor: pointer;
+}
+
+.SearchCouponsModal{
+    width: 550px;
+    height: 200px;
+    text-align: center;
+    font-family: Lato;
+}
+
+
+.SearchCouponsModal .search-header{
+    font-size: 2rem;
+    color: white;
+    margin: 10px;
+}
+
+.SearchCouponsModal .search-message{
+    font-size: 1rem;
+    color: white;
+    margin: 10px;
+}
+
+.SearchCouponsModal .search-box{
+    width: 50%;
+    height: 30px;
+    margin: 10px;
+    padding: 3px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: none;
+    color:black;
+}
+
+.SearchCouponsModal .search-submit {
+    border-radius: 30px;
+    font-size: 1.2rem;
+    background-color:#2d3e50;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    color: #fff;
+    margin: 3px;
+    width: 125px;
+}
+
+.SearchCouponsModal .search-submit:hover {
+    cursor: pointer;
+    background-color:#1e354e;
+
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .SearchCouponsModal{
+        width: 450px;
+    }
+}
+

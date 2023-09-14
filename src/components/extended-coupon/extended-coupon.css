@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Macondo&family=Questrial&family=Tsukimi+Rounded&display=swap');
+
+.ExtendedCoupon{
+    width: 600px;
+    height: 300px;
+    display: flex;
+}
+
+.ExtendedCoupon .exit-modal-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 15px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: #2d3e50;
+    background-color: #fff;
+  }
+
+.ExtendedCoupon .exit-modal-icon:hover{
+    background-color: rgba(238, 238, 238, 0.734);
+    cursor: pointer;
+}
+
+.ExtendedCoupon .coupon-img{
+    width: 300px;
+    height: 300px;
+    margin: 0;
+}
+
+.ExtendedCoupon .coupon-img img{
+    border-radius: 15px;
+}
+  
+.extended-coupon-details{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Lato;
+}
+
+
+.extended-coupon-details .coupon-name{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.extended-coupon-details .coupon-company{
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: #fff;
+    margin-top: 3px;
+    font-family:"Tsukimi Rounded";
+}
+
+.extended-coupon-details .coupon-description{
+    font-size: 1.2rem;
+    width: 250px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+}
+
+.extended-coupon-details .price-purchase{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.price-purchase .coupon-price{
+    margin: 10px;
+    font-size: 2rem;
+    color: #fff;
+} 
+
+.price-purchase .coupon-purchase-btn{
+  border-radius: 30px;
+  font-size: 20px;
+  background-color:forestgreen;
+  border-radius: 20px;
+  border: 3px solid aliceblue;
+  color: aliceblue;
+  margin: 3px;
+  width: 125px;
+}
+
+.price-purchase .coupon-purchase-btn:hover{
+    cursor: pointer;
+    background-color:rgb(63, 163, 63);
+}
+
+
+@media screen and (max-width: 900px) {
+    .ExtendedCoupon{
+        width: 300px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+    }
+}

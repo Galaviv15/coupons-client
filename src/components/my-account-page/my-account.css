@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Macondo&family=Questrial&family=Tsukimi+Rounded&display=swap');
+
+.MyAccount *{
+    padding: 0;
+    margin: 0;
+    font-family: Lato;
+}
+
+.MyAccount{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.MyAccount>button{
+    font-size: 1.1rem;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.MyAccount>button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.775);
+}
+
+.MyAccount>button>.get-details-icon{
+    vertical-align: middle;
+}
+
+.MyAccount .welcome-header{
+    margin-top: 10px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.MyAccount .user-details-component .user-details-header{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.MyAccount .user-details-component{
+    width: 750px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.MyAccount .user-details-table{
+    width: 750px;
+}
+
+.MyAccount .user-details-table .user-data-button{
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.MyAccount .user-details-table .user-data-button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.775);
+}
+
+.MyAccount .user-details-table .user-data{
+    height: 70px;
+}
+
+
+.MyAccount .purchases-component{
+    width: 750px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.MyAccount .purchases-component .purchases-header{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.MyAccount .purchases-table{
+    width: 750px;
+    
+}
+
+.MyAccount table,th,td{
+    border: 1px solid black;
+}
+
+.MyAccount th{
+    width: 125px;
+    padding: 5px;
+    font-size: 1.5rem;
+    color: #fff;
+    height: 75px;
+}
+
+.MyAccount td{
+    padding: 5px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.MyAccount .user-data{
+    width: 150px;
+    padding: 5px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .MyAccount .welcome-header{
+        font-size: 2.5rem;
+    }
+
+    .MyAccount h4{
+        font-size: 1.5rem;
+    }
+
+    .MyAccount .user-details-component{
+        width: 450px;
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    .MyAccount .user-details-table{
+        width: 450px;
+    }
+
+    .MyAccount .purchases-component{
+        width: 450px;
+        text-align: center;
+        margin: 50px auto;
+    }
+
+    .MyAccount .purchases-table{
+        width: 450px;
+    }
+
+    .MyAccount th{
+        font-size: 1.1rem;
+        color: #fff;
+    }
+    
+    .MyAccount td{
+        color: black;
+        font-size: 1.0rem;
+    }
+}

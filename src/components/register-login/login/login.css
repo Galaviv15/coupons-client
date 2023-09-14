@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Assistant&family=McLaren&family=Montserrat&family=Teko&display=swap');
+
+.card-box {
+    width: 370px;
+    height: 520px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    font-family: 'McLaren';
+    position: relative;
+  }
+
+  .exit-modal-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 15px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: #2d3e50;
+    background-color: #fff;
+  }
+
+  .exit-modal-icon:hover{
+    background-color: rgba(238, 238, 238, 0.734);
+    cursor: pointer;
+  }
+  
+  .card-header h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 20px;
+  }
+  
+  .card-details input {
+    width: 90%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    background: #fff;
+    font-size: 17px;
+    font-family: 'McLaren';
+  }
+
+  .card-details input:focus {
+    background-color: #1d456f;
+    color: #fff;
+    transition: 0.4s;
+    font-size: 20px;
+  }
+
+  .card-details input:focus::-webkit-input-placeholder {
+    color: #fff;
+  }
+
+  .card-details .icon{
+    position: relative;
+    margin-left: 5px;
+    color: #fff;
+  }
+
+  .Login .activation-buttons {
+    margin-top: 133px;
+  }
+  
+  .activation-buttons .buttonToClick {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 60%;
+    color: #2d3e50;
+    cursor: pointer;
+    background: #fff;
+  }
+  
+  .activation-buttons .buttonToClick:hover {
+    background-color: #48627e;
+    color: #fff;
+  }
+  
+  .activation-buttons input:focus {
+    background: #eee;
+  }
+  
+  .activation-buttons .register-login-link{
+    color: #fff;
+    font-size: 1em;
+    text-decoration: underline;
+    margin-bottom: 8px;
+  }
+  
+  .activation-buttons .register-login-link:hover{
+    color: #c7e5ff;
+    font-size: 1.05em;
+    cursor: pointer;
+  }
+
+
+  .Login .get-user-details{
+    background-color: #fff;
+    color: #1d456f;
+    border-radius: 20px;
+    border: 1px solid salmon;
+  }
+
+  .Login .get-user-details:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  

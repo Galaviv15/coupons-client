@@ -1,0 +1,22 @@
+
+
+.not-found{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+
+.not-found h2{
+    margin: 20px 0;
+}
+
+.error-img{
+    height: 350px;
+    border-radius: 25px;
+}
+
+.not-found a{
+    color:blue;
+    margin-left: 3px;
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Assistant&family=McLaren&family=Montserrat&family=Teko&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/*all divs inside the main gets 100% of the main component*/
+.main>div{
+  min-height: 150vh;
+  margin-top: 100px;
+}
+
+.welcome-heading{
+    font-size: 3.5rem;
+    margin: 10px;
+    text-align: center;
+    font-family: 'McLaren';
+}
+

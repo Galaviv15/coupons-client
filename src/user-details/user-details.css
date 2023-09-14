@@ -1,0 +1,44 @@
+
+.UserDetails *{
+    margin: 0;
+    padding: 0;
+}
+
+.UserDetails{
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.exit-modal-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 15px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #2d3e50;
+    background-color: #fff;
+  }
+
+  .exit-modal-icon:hover{
+    background-color: rgba(238, 238, 238, 0.734);
+    cursor: pointer;
+  }
+
+.UserDetails .heading{
+    color: #fff;
+    font-size: 2.3rem;
+    margin: 10px;
+}
+
+.UserDetails .details{
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 10px;
+}
