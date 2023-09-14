@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-
 import ICoupon from "../../models/ICoupon";
 import "./purchase-modal.css";
 import axios from "axios";

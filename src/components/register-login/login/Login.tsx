@@ -1,7 +1,7 @@
 import { faLock, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
-import React, { useState } from "react";
+import { useState } from "react";
 import {useNavigate } from "react-router-dom";
 import "./login.css";
 import jwt_decode from 'jwt-decode';

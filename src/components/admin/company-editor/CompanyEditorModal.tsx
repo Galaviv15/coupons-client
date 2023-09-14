@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useState } from "react";
+import { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import ICompany from "../../../models/ICompany";
 import "./company-editor-modal.css";

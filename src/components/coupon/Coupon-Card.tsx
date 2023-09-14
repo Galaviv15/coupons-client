@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ICoupon from "../../models/ICoupon";
 import { AppState } from "../../redux/app-state";

@@ -1,7 +1,5 @@
 import axios from "axios";
-import jwtDecode from "jwt-decode";
-import { type } from "os";
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import jwt_decode from 'jwt-decode';
 import ICoupon from "../../models/ICoupon";

@@ -1,4 +1,3 @@
-import React from "react";
 
 import "./main.css";
 import { Route, Routes } from "react-router-dom";

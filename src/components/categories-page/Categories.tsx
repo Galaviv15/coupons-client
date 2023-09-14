@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { ActionType } from "../../redux/action-type";
 import { AppState } from "../../redux/app-state";

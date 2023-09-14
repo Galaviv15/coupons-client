@@ -1,7 +1,7 @@
 import { faLocationDot, faLock, faPhone, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
-import React, { useState } from "react";
+import { useState } from "react";
 import "./register.css";
 import { IoCloseOutline } from "react-icons/io5";
 

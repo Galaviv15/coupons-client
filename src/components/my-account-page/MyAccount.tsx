@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ISuccessfulLoginResponse from "../../models/ISuccessfulLoginResponse";
 import { ActionType } from "../../redux/action-type";
