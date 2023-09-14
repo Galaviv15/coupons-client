@@ -16,7 +16,7 @@ function CategoryCraetorModal(props: ICategoryCreatorModal){
     //creating category - 
     async function onCreateCategory() {
         try{
-          const response = await axios.post(`http://${serverIP}/categories`, { type });
+          const response = await axios.post(`https://${serverIP}/categories`, { type });
           console.log(response);
           alert("Category successfully created !");
           props.closeModal();
@@ -28,7 +28,7 @@ function CategoryCraetorModal(props: ICategoryCreatorModal){
 
     async function onUpdateCategory() {
         try{
-          const response = await axios.put(`http://${serverIP}/categories`,{type});
+          const response = await axios.put(`https://${serverIP}/categories`,{type});
           console.log(response);
           alert("Category successfully updated !");
         }catch(e){

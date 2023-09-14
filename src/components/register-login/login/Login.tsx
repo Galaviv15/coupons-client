@@ -31,7 +31,7 @@ function Login(props: any) {
 
   async function onLogin(event: any) {
     try {
-      const response = await axios.post(`http://${serverIP}/users/login`, { userName, password});
+      const response = await axios.post(`https://${serverIP}/users/login`, { userName, password});
       let token: string = response.data.token;      
       let decodedToken: any = jwt_decode(token); 
       console.log(decodedToken);

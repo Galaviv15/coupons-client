@@ -19,7 +19,7 @@ function Categories() {
 
   async function getCategories() {
     try {
-      const url = `http://${serverIP}/categories`;
+      const url = `https://${serverIP}/categories`;
       let response = await axios.get(url);
       let categoriesArray = response.data;
       dispatch({

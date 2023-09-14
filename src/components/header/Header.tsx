@@ -143,8 +143,9 @@ function Header() {
 
   useEffect(() => {
     showButton();
-    getCategories();
-    getCompanies();
+    //getCategories();
+    //getCompanies();
+    check();
   }, []);
 
   function onLogoutClick(){
@@ -243,7 +244,7 @@ function Header() {
 
   async function getCategories() {
     try {
-      const url = `http://${serverIP}/categories`;
+      const url = `https://${serverIP}/categories`;
       let response = await axios.get(url);
       let categoriesArray = response.data;
       dispatch({
@@ -258,7 +259,7 @@ function Header() {
 
     async function getCompanies() {
     try {
-      const url = `http://${serverIP}/companies`;
+      const url = `https://${serverIP}/companies`;
       //const url = `http://34.165.26.152/companies`; //For Mobile
       let response = await axios.get(url);
       let companiesArray = response.data;
@@ -272,10 +273,31 @@ function Header() {
     }
   }
 
+  async function check() {
+    try {
+      console.log("server IP", serverIP);
+      const url = `http://${serverIP}/companies`;
+      let response = await axios.get(url);
+      console.log(response.data);
+    } catch (e: any) {
+      console.log("failed to send http request");
+    }
+
+
+    try {
+      console.log("server IP", serverIP);
+      const url = `https://${serverIP}/companies`;
+      let response = await axios.get(url);
+      console.log(response.data);
+    } catch (e: any) {
+      console.log("failed to send https request");
+    }
+  }
+
 
   async function getCouponsByCompany(id: number) {
     try {
-      const url = `http://${serverIP}/coupons/byCompanyId?companyId=${id}`;
+      const url = `https://${serverIP}/coupons/byCompanyId?companyId=${id}`;
       let response = await axios.get(url);
       let companyCouponsArray = response.data;
       dispatch({
@@ -290,7 +312,7 @@ function Header() {
 
   async function getCouponsByCategory(id: number) {
     try {
-      const url = `http://${serverIP}/coupons/byCategoryId?categoryId=${id}`;
+      const url = `https://${serverIP}/coupons/byCategoryId?categoryId=${id}`;
       let response = await axios.get(url);
       let categoryCouponsArray = response.data;
       dispatch({
@@ -305,7 +327,7 @@ function Header() {
 
   async function getAllCoupons() {
     try {
-      const url = `http://${serverIP}/coupons/byPage?pageNumber=${0}`;
+      const url = `https://${serverIP}/coupons/byPage?pageNumber=${0}`;
       let response = await axios.get(url);
       let couponsArray = response.data;
 

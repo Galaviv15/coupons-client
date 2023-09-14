@@ -52,7 +52,7 @@ function PurchaseModal(props: IPurchaseProps) {
 
   async function purchaseCoupon(couponId: number) {
         try {
-          await axios.post(`http://${serverIP}/purchases`, {
+          await axios.post(`https://${serverIP}/purchases`, {
             amountPurchased: couponsAmount,
             coupon: {
               id: couponId

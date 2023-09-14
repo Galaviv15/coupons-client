@@ -22,7 +22,7 @@ function CompanyEditorModal(props: ICompanyEditorModal) {
   //Updating company - works
   async function onUpdateCompany() {
     try {
-      const response = await axios.put(`http://${serverIP}/companies`, {
+      const response = await axios.put(`https://${serverIP}/companies`, {
         id,
         name,
         address,

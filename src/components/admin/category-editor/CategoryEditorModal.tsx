@@ -18,7 +18,7 @@ function CategoryEditorModal(props: ICategoryEditorModal){
 
     async function onUpdateCategory() {
         try{
-          const response = await axios.put(`http://${serverIP}/categories`, {id, type});
+          const response = await axios.put(`https://${serverIP}/categories`, {id, type});
           console.log(response);
           alert("Category successfully updated !");
         }catch(e){

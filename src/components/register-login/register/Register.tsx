@@ -19,7 +19,7 @@ let[phoneNumber, setPhoneNumber]= useState("");
 
 async function onRegister() {
   try{
-    const response = await axios.post(`http://${serverIP}/customers`, { user:{userName, password}, address, phoneNumber});
+    const response = await axios.post(`https://${serverIP}/customers`, { user:{userName, password}, address, phoneNumber});
     console.log(response);
     alert("Registration completed, please Login");
     props.moveToLoginModal();

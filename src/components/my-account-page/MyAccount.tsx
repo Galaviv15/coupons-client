@@ -40,7 +40,7 @@ function MyAccount() {
 
   async function getAllPurchases() {
     try {
-      const url = `http://${serverIP}/purchases/byCustomerId?customerId=${userDetails.id}`;
+      const url = `https://${serverIP}/purchases/byCustomerId?customerId=${userDetails.id}`;
       let response = await axios.get(url);
       let purchases = response.data;
       dispatch({

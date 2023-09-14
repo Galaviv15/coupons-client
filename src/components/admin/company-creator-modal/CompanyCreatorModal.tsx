@@ -19,7 +19,7 @@ function CompanyCreatorModal(props: ICompanyCreatorModal){
     //creating company - works
     async function onCreateCompany() {
         try{
-          const response = await axios.post(`http://${serverIP}/companies`,{
+          const response = await axios.post(`https://${serverIP}/companies`,{
             name, address, phoneNumber,
           });
           console.log(response);
