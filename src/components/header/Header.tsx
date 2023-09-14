@@ -273,6 +273,7 @@ function Header() {
   }
 
   async function check() {
+
     try {
       console.log("server IP", serverIP);
       const url = `http://${serverIP}/companies`;
@@ -282,6 +283,16 @@ function Header() {
     } catch (e: any) {
       console.error(e);
       console.log("failed to send http request");
+    }
+
+    try {
+      const url = `https://www.google.com`;
+      console.log("url", url);
+      let response = await axios.get(url);
+      console.log(response.data);
+    } catch (e: any) {
+      console.error(e);
+      console.log("failed to send https to google");
     }
   
   }
