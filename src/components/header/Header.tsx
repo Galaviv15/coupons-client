@@ -260,7 +260,6 @@ function Header() {
     async function getCompanies() {
     try {
       const url = `https://${serverIP}/companies`;
-      //const url = `http://34.165.26.152/companies`; //For Mobile
       let response = await axios.get(url);
       let companiesArray = response.data;
       dispatch({
@@ -277,23 +276,14 @@ function Header() {
     try {
       console.log("server IP", serverIP);
       const url = `http://${serverIP}/companies`;
+      console.log("url", url);
       let response = await axios.get(url);
       console.log(response.data);
     } catch (e: any) {
       console.error(e);
       console.log("failed to send http request");
     }
-
-    try {
-      console.log("server IP", serverIP);
-      const url = `https://${serverIP}/companies`;
-      let response = await axios.get(url);
-      console.log(response.data);
-    } catch (e: any) {
-      console.error(e);
-      console.log("failed to send https request");
-    }
-    
+  
   }
 
 
