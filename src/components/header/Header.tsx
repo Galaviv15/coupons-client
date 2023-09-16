@@ -284,7 +284,8 @@ function Header() {
       console.error(e);
       console.log("failed to send http request");
     }
-
+    console.log("----------------------");
+    
     try {
       console.log("server IP", serverIP);
       const url = `https://${serverIP}/companies`;
@@ -293,9 +294,40 @@ function Header() {
       console.log(response.data);
     } catch (e: any) {
       console.error(e);
-      console.log("failed to send https request");
+      console.log("failed to send HTTP request");
+    }
+    console.log("-----------------------");
+    try {
+      const url = `https://www.boredapi.com/api/activity`;
+      console.log("url", url);
+      let response = await axios.get(url);
+      console.log(response.data);
+    } catch (e: any) {
+      console.error(e);
+      console.log("failed to send request to the bored api");
+    }
+    console.log("-----------------------");
+    try {
+      const url = `http://34.165.22.160:8080/categories`;
+      console.log("url", url);
+      let response = await axios.get(url);
+      console.log(response.data);
+    } catch (e: any) {
+      console.error(e);
+      console.log("failed to send request to HTTP 34.165.22.160:8080");
+    }
+    console.log("-----------------------");
+    try {
+      const url = `https://34.165.22.160:8080/categories`;
+      console.log("url", url);
+      let response = await axios.get(url);
+      console.log(response.data);
+    } catch (e: any) {
+      console.error(e);
+      console.log("failed to send request to HTTPS 34.165.22.160:8080");
     }
   
+
   }
 
 
