@@ -10,7 +10,7 @@ import { useDispatch } from "react-redux";
 import { ActionType } from "../../../redux/action-type";
 import { IoCloseOutline } from "react-icons/io5";
 import Modal from "react-modal";
-import UserDetails from "../../../user-details/UserDetails";
+import UserDetails from "../../user-details/UserDetails";
 
 
     //I need to change the hrefs as its not good for navigations
@@ -31,7 +31,7 @@ function Login(props: any) {
 
   async function onLogin(event: any) {
     try {
-      const response = await axios.post(`https://${serverIP}/users/login`, { userName, password});
+      const response = await axios.post(`http://${serverIP}/users/login`, { userName, password});
       let token: string = response.data.token;      
       let decodedToken: any = jwt_decode(token); 
       console.log(decodedToken);

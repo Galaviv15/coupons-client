@@ -25,7 +25,7 @@ function CouponCreatorModal(props: ICouponCreator) {
   //creating coupon - works
   async function createCoupon() {
     try {
-      const response = await axios.post(`https://${serverIP}/coupons`, {
+      const response = await axios.post(`http://${serverIP}/coupons`, {
         name,
         price,
         description,

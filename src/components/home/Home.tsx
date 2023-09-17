@@ -29,12 +29,12 @@ function Home(){
     },[]);
   
     useEffect(() => {
-      //getCouponsByPage(pageNumber)
+    getCouponsByPage(pageNumber)
     },[pageNumber]);
   
     async function getCouponsByPage(pageNumber: number) {
       try {
-        const url = `https://${serverIP}/coupons/byPage?pageNumber=${pageNumber}`;
+        const url = `http://${serverIP}/coupons/byPage?pageNumber=${pageNumber}`;
         let response = await axios.get(url);
         let couponsArray = response.data;
         if(couponsArray.length === 0){

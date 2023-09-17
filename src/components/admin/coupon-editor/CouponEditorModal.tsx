@@ -27,7 +27,7 @@ function CouponEditorModal(props: ICouponEditorProps) {
   //updating coupon - works
   async function updateCoupon() {
     try {
-      const response = await axios.put(`https://${serverIP}/coupons`, {
+      const response = await axios.put(`http://${serverIP}/coupons`, {
         id,
         name,
         price,

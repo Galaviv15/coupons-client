@@ -143,10 +143,9 @@ function Header() {
 
   useEffect(() => {
     showButton();
-    //getCategories();
-    //getCompanies();
-    check();
-  }, []);
+    getCategories();
+    getCompanies();
+    }, []);
 
   function onLogoutClick(){
     localStorage.clear();
@@ -244,7 +243,7 @@ function Header() {
 
   async function getCategories() {
     try {
-      const url = `https://${serverIP}/categories`;
+      const url = `http://${serverIP}/categories`;
       let response = await axios.get(url);
       let categoriesArray = response.data;
       dispatch({
@@ -259,7 +258,7 @@ function Header() {
 
     async function getCompanies() {
     try {
-      const url = `https://${serverIP}/companies`;
+      const url = `http://${serverIP}/companies`;
       let response = await axios.get(url);
       let companiesArray = response.data;
       dispatch({
@@ -272,68 +271,10 @@ function Header() {
     }
   }
 
-  async function check() {
-
-    try {
-      console.log("server IP", serverIP);
-      const url = `http://${serverIP}/companies`;
-      console.log("url", url);
-      let response = await axios.get(url);
-      console.log(response.data);
-    } catch (e: any) {
-      console.error(e);
-      console.log("failed to send http request");
-    }
-    console.log("----------------------");
-    
-    try {
-      console.log("server IP", serverIP);
-      const url = `https://${serverIP}/companies`;
-      console.log("url", url);
-      let response = await axios.get(url);
-      console.log(response.data);
-    } catch (e: any) {
-      console.error(e);
-      console.log("failed to send HTTP request");
-    }
-    console.log("-----------------------");
-    try {
-      const url = `https://www.boredapi.com/api/activity`;
-      console.log("url", url);
-      let response = await axios.get(url);
-      console.log(response.data);
-    } catch (e: any) {
-      console.error(e);
-      console.log("failed to send request to the bored api");
-    }
-    console.log("-----------------------");
-    try {
-      const url = `http://34.165.22.160:8080/categories`;
-      console.log("url", url);
-      let response = await axios.get(url);
-      console.log(response.data);
-    } catch (e: any) {
-      console.error(e);
-      console.log("failed to send request to HTTP 34.165.22.160:8080");
-    }
-    console.log("-----------------------");
-    try {
-      const url = `https://34.165.22.160:8080/categories`;
-      console.log("url", url);
-      let response = await axios.get(url);
-      console.log(response.data);
-    } catch (e: any) {
-      console.error(e);
-      console.log("failed to send request to HTTPS 34.165.22.160:8080");
-    }
-  
-
-  }
-
 
   async function getCouponsByCompany(id: number) {
     try {
-      const url = `https://${serverIP}/coupons/byCompanyId?companyId=${id}`;
+      const url = `http://${serverIP}/coupons/byCompanyId?companyId=${id}`;
       let response = await axios.get(url);
       let companyCouponsArray = response.data;
       dispatch({
@@ -348,7 +289,7 @@ function Header() {
 
   async function getCouponsByCategory(id: number) {
     try {
-      const url = `https://${serverIP}/coupons/byCategoryId?categoryId=${id}`;
+      const url = `http://${serverIP}/coupons/byCategoryId?categoryId=${id}`;
       let response = await axios.get(url);
       let categoryCouponsArray = response.data;
       dispatch({
@@ -363,7 +304,7 @@ function Header() {
 
   async function getAllCoupons() {
     try {
-      const url = `https://${serverIP}/coupons/byPage?pageNumber=${0}`;
+      const url = `http://${serverIP}/coupons/byPage?pageNumber=${0}`;
       let response = await axios.get(url);
       let couponsArray = response.data;
 

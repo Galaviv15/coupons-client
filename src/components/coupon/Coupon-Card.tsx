@@ -59,7 +59,7 @@ function CouponCard(coupon: ICoupon) {
   //Works + Renders the coupons List
   async function deleteCouponById(id: number) {
     try {
-      const url = `https://${serverIP}/coupons/${id}`;
+      const url = `http://${serverIP}/coupons/${id}`;
       let response = await axios.delete(url);
       let couponDeletedId = id;
       dispatch({type: ActionType.DeleteCoupon, payload: {couponDeletedId}})
